@@ -1,0 +1,37 @@
+body {
+    background: linear-gradient(180deg,#fff,#6C6C6C);
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: url(../img/background.jpg) no-repeat fixed;
+}
+
+a {
+    color: #000;
+}
+nav ul{
+    margin-top: 0;
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li {
+    margin-left: 30px ;
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.social-media img {
+    width: 50px;
+}
+
+footer {
+    border: #000 solid 1px;
+    background: #444444;
+}
