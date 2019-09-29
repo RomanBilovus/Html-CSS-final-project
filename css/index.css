@@ -1,37 +1,127 @@
 body {
-    background: linear-gradient(180deg,#fff,#6C6C6C);
-    margin: 0;
+    background: linear-gradient(180deg, #fff, #6c6c6c);
     padding: 0;
+    margin: 0;
 }
-header {
-    background: url(../img/background.jpg) no-repeat fixed;
+
+img[src$=".svg"] {
+    width: 50px;
+}
+
+img[src$=".jpg"] {
+    max-width: 400px;
+    max-height: 495px;
+    border-radius: 10px;
 }
 
 a {
+    align-self: center;
     color: #000;
+    text-decoration: none;
 }
-nav ul{
-    margin-top: 0;
-    padding-top: 20px;
+
+section {
+    max-width: 980px;
+    margin: auto;
+}
+
+ul {
     display: flex;
     justify-content: flex-end;
 }
 
-nav li {
-    margin-left: 30px ;
+li {
+    font-family: "Berkshire Swash", cursive;
     list-style: none;
+    margin-left: 50px;
 }
 
-li a {
-    text-decoration: none;
-    color: #000;
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Berkshire Swash", cursive;
 }
 
-.social-media img {
-    width: 50px;
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0), #aaa);
+    margin-left: 20px;
+}
+
+h3, h4, h6 {
+    font-family: "Italiana", serif;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-family: "Allerta", sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#portfolio .wrapper img[src$=".svg"] {
+    opacity: 0.5;
+}
+
+#portfolio .wrapper img[src$=".svg"]:hover {
+    opacity: 1;
+}
+
+.contact {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo h4 {
+    margin-left: 10px;
+}
+
+.feedback {
+    justify-content: space-evenly;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+}
+
+input {
+    width: 299px;
+    height: 30px;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+
+textarea {
+    margin-top: 20px;
+    border: 1px solid black;
+}
+
+input[type="submit"] {
+    background: #2a2929;
+    color: #aaa;
 }
 
 footer {
-    border: #000 solid 1px;
-    background: #444444;
+    background: #2a2929;
+    color: #aaa;
+}
+
+h6 {
+    margin: 0;
 }
