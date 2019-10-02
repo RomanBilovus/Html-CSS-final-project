@@ -6,34 +6,43 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
         <link rel="icon" type="image/x-icon" href="img/favicon.ico">
         <link rel="stylesheet" href="css/index.css">
-        <link href="https://fonts.googleapis.com/css?family=Allerta%7CBerkshire+Swash&display=swap" rel="stylesheet">
         <title>ART Garage</title>
     </head>
     <body>
         <header>
-            <nav>
+            <nav class="desktop-nav">
                 <ul>
                     <li>
-                        <a href="#home">HOME</a>
+                        <a href="#home">home</a>
                     </li>
                     <li>
-                        <a href="#about">ABOUT US</a>
+                        <a href="#about">about us</a>
                     </li>
                     <li>
-                        <a href="#portfolio">OUR WORK</a>
+                        <a href="#portfolio">our work</a>
                     </li>
                     <li>
-                        <a href="#contact">CONTACT</a>
+                        <a href="#contact">contact</a>
                     </li>
                     <li>
-                        <a href="#book">BOOK ONLINE</a>
+                        <a href="#book">book online</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="mobile-nav">
+                <ul>
+                    <li>
+                        <h1>ART Garage</h1>
+                    </li>
+                    <li>
+                        <a href="#about"><img src="img/menu.svg" alt="menu button of three horizontal lines"></a>
                     </li>
                 </ul>
             </nav>
             <section id="home">
-                <h2>Welcome To</h2>
+                <p>Welcome To</p>
                 <h1>ART Garage</h1>
-                <h3>Your Best Tattoo Studio</h3>
+                <p class="subheading">Your Best Tattoo Studio</p>
             </section>
         </header>
         <div class="article">
@@ -41,12 +50,12 @@
                 <div class="wrapper">
                     <img src="img/tattoo-artist.jpg" alt="girl tattoo artist">
                     <div class="text-wrapper">
-                        <h3>ABOUT US</h3>
-                        <p>We are a new format studio, so here we will not write about the things
+                        <h2>ABOUT US</h2>
+                        <p>
+                            We are a new format studio, so here we will not write about the things
                            that are a must have for an art tattoo studio - sterility, disposable
-                           tools, biological material handling.
-                        </p>
-                        <p>We do not limit you to choosing a sketch library on the site. If you
+                           tools, biological material handling.<br>
+                           We do not limit you to choosing a sketch library on the site. If you
                            know what you want, it is easy to find a sketch on the Internet, if
                            there is only an idea - then together with our artist you can design a
                            sketch so that you will be delighted. If you don't even have an idea
@@ -67,7 +76,7 @@
                 </div>
             </section>
             <section id="portfolio">
-                <h3>OUR WORK</h3>
+                <h2>OUR WORK</h2>
                 <div class="wrapper">
                     <a href="#">
                         <img src="img/back.svg" alt="arrow left">
@@ -79,46 +88,50 @@
                 </div>
             </section>
             <section id="contact">
-                <h3>FIND US</h3>
-                <div class="wrapper contact">
+                <h2>FIND US</h2>
+                <div class="wrapper">
                     <img src="img/map.jpg" alt="map"/>
-                    <div class="address">
-                        <p>2101 Waverley Street,<br>
-                            Palo Alto, CA 94301
-                        </p>
-                        <p>artist@art-garage.com</p>
-                        <p>Tel: 123-456-7890</p>
-                        <p>OPENING HOURS:</p>
-                        <p>Mon - Fri: 9 am - 7 pm<br>
-                            ​​Saturday: 10 am - 3 pm<br>​
-                            Sunday: 11 am - 2 pm
-                        </p>
-                    </div>
-                    <div class="social-media">
-                        <div class="logo">
-                            <img src="img/instagram.svg" alt="instagram logo">
-                            <a href="https://www.instagram.com/ipuartgarage/">
-                                <h4>Instagram</h4>
-                            </a>
+                    <div class="address-social-media">
+                        <div class="address">
+                            <p>
+                                2101 Waverley Street,<br>
+                                Palo Alto, CA 94301
+                            </p>
+                            <p>artist@art-garage.com</p>
+                            <p>Tel: 123-456-7890</p>
+                            <p>OPENING HOURS:</p>
+                            <p>
+                                Mon - Fri: 9 am - 7 pm<br>
+                                ​​Saturday: 10 am - 3 pm<br>​
+                                Sunday: 11 am - 2 pm
+                            </p>
                         </div>
-                        <div class="logo">
-                            <img src="img/twitter.svg" alt="twitter logo">
-                            <a href="https://twitter.com">
-                                <h4>Twitter</h4>
-                            </a>
-                        </div>
-                        <div class="logo">
-                            <img src="img/facebook.svg" alt="facebook logo">
-                            <a href="https://www.facebook.com/ipuartgarage/">
-                                <h4>Facebook</h4>
-                            </a>
+                        <div class="social-media">
+                            <div class="logo">
+                                <img src="img/instagram.svg" alt="instagram logo">
+                                <a href="https://www.instagram.com/ipuartgarage/">
+                                    <p>Instagram</p>
+                                </a>
+                            </div>
+                            <div class="logo">
+                                <img src="img/twitter.svg" alt="twitter logo">
+                                <a href="https://twitter.com">
+                                    <p>Twitter</p>
+                                </a>
+                            </div>
+                            <div class="logo">
+                                <img src="img/facebook.svg" alt="facebook logo">
+                                <a href="https://www.facebook.com/ipuartgarage/">
+                                    <p>Facebook</p>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
             <section id="book">
-                <h3>BOOK ONLINE</h3>
-                <div class="wrapper feedback">
+                <h2>BOOK ONLINE</h2>
+                <div class="wrapper">
                     <img src="img/tattoo-sketch.jpg" alt="tattoo sketch">
                     <form action="https://formspree.io/romantuk@ukr.net" method="POST">
                         <label>
@@ -131,7 +144,7 @@
                             <input type="text" placeholder="Subject" name="subject">
                         </label>
                         <label>
-                            <textarea rows="10" cols="39" placeholder="Message" name="message"></textarea>
+                            <textarea rows="10" cols="41" placeholder="Message" name="message"></textarea>
                         </label>
                         <label>
                             <input type="submit">
@@ -141,10 +154,11 @@
             </section>
         </div>
         <footer>
-            <h4>© Copyright 2019 Art Garage. All rights reserved. Designed by Bilovus R.</h4>
-            <h6><a href="https://www.flaticon.com/authors/freepik">Icons made by Freepik </a>
+            <p>© Copyright 2019 Art Garage. All rights reserved. Designed by Bilovus R.</p>
+            <p>
+                <a href="https://www.flaticon.com/authors/freepik">Icons made by Freepik </a>
                 <a href="https://www.flaticon.com/">from www.flaticon.com</a>
-            </h6>
+            </p>
         </footer>
     </body>
 </html>
