@@ -67,74 +67,6 @@ header nav ul li a:hover {
     text-shadow: 1px 1px 2px #000, 0 0 1em #00ffff;
 }
 
-@media (max-width: 575px) {
-    header {
-        min-height: 330px;
-    }
-
-    header nav.desktop-nav {
-        display: none;
-    }
-
-    header nav.mobile-nav ul {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-family: "Berkshire Swash", cursive;
-        margin: 0 10px;
-    }
-
-    header nav.mobile-nav ul li {
-        margin: 0;
-    }
-
-    header nav.mobile-nav ul li img[src$=".svg"] {
-        width: 60px;
-        height: 40px;
-    }
-
-    #home {
-        margin: 20px auto 0 auto !important;
-        text-align: center;
-    }
-
-    #home p:nth-child(1) {
-        display: none;
-    }
-
-    #home h1 {
-        display: none;
-    }
-
-    #about .wrapper {
-        flex-direction: column;
-    }
-
-    #portfolio .wrapper img[src$=".jpg"] {
-        width: 310px;
-    }
-
-    #contact .wrapper {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-
-    #book .wrapper {
-        flex-direction: column;
-    }
-
-    #book .wrapper img {
-        margin-bottom: 20px;
-    }
-}
-
-@media (min-width: 576px) {
-    header nav.mobile-nav {
-        display: none;
-    }
-}
-
 .article {
     margin: -60px auto 20px auto;
 }
@@ -219,13 +151,21 @@ header nav ul li a:hover {
 #contact .wrapper .social-media .logo {
     display: flex;
     align-items: center;
-    margin-left: 50px;
+    margin-left: 20px;
+}
+
+#contact .wrapper .social-media {
+    min-height: 248px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
 }
 
 #contact .wrapper img[src$=".svg"] {
     width: 50px;
     height: 50px;
-    margin: 10px;
+    margin: 10px 10px 0 0;
 }
 
 #book .wrapper {
@@ -282,3 +222,94 @@ footer p {
     margin: 0;
     font-size: 0.8rem;
 }
+
+@media (max-width: 726px) {
+    header {
+        min-height: 320px;
+    }
+
+    header nav.desktop-nav {
+        display: none;
+    }
+
+    header nav.mobile-nav ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Berkshire Swash", cursive;
+        margin: 0 10px;
+    }
+
+    header nav.mobile-nav ul li {
+        margin: 0;
+    }
+
+    header nav.mobile-nav ul li img[src$=".svg"] {
+        width: 60px;
+        height: 40px;
+    }
+
+    #home {
+        margin: 20px auto 0 auto !important;
+        text-align: center;
+    }
+
+    #home p:nth-child(1) {
+        display: none;
+    }
+
+    #home h1 {
+        display: none;
+    }
+
+    #about .wrapper {
+        flex-direction: column;
+    }
+
+    #portfolio .wrapper img[src$=".jpg"] {
+        width: 270px;
+    }
+
+    #portfolio .wrapper img[src$=".svg"] {
+    width: 20px;
+    height: 60px;
+    margin: 5px !important;
+    }
+
+    #contact .wrapper {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    #contact .wrapper img {
+        max-width: 318px !important;
+        margin-bottom: 20px;
+    }
+
+    #book .wrapper {
+        flex-direction: column;
+    }
+
+    #book .wrapper {
+        flex-direction: column;
+    }
+
+    #book .wrapper img {
+        max-width: 310px !important;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 727px) {
+    header nav.mobile-nav {
+        display: none;
+    }
+}
+
+@media (max-width: 370px) {
+     #contact .wrapper .social-media .logo {
+        flex-direction: column;
+    }
+}
+
